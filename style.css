@@ -1,0 +1,60 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    width:100%;
+    height:100vh;
+    overflow:hidden;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-family:'Segoe UI',sans-serif;
+    background:linear-gradient(
+        135deg,
+        #f6e7ff,
+        #e7c6ff,
+        #d7aefb,
+        #c084fc
+    );
+    position:relative;
+}
+
+.hero{
+    text-align:center;
+    z-index:10;
+    padding:20px;
+}
+
+.hero h1{
+    color:white;
+    font-size:2.7rem;
+    text-shadow:0 0 20px rgba(255,255,255,.8);
+    margin-bottom:15px;
+}
+
+.subtitle{
+    color:white;
+    font-size:1.1rem;
+}
+
+.flower{
+    position:absolute;
+    bottom:-50px;
+    opacity:.8;
+    animation-name:floatUp;
+    animation-timing-function:linear;
+    animation-iteration-count:1;
+}
+
+@keyframes floatUp{
+    0%{
+        transform:translateY(0) rotate(0deg);
+    }
+
+    100%{
+        transform:translateY(-120vh) rotate(360deg);
+    }
+}
